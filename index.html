@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trishal Muthan</title>
+        <script>
+            let x = 1;
+            function changepic()
+            {
+                if(x === 1)
+                {
+                    document.querySelector('img').src = "imtrishal.png"
+                    x = 2;
+                }
+                else
+                {
+                    document.querySelector('img').src = "hibitmoji.png"
+                    x = 1;
+                }
+            }
+            window.setInterval(changepic, 1500)
+        </script>
+    </head>
+    <body>
+        <header class="bg-primary text-white">
+            This is Trishal Muthan.
+        </header>
+        <div class="navbar">
+            <a class="btn btn-primary" href="#" role="button">Home</a>
+            <a class="btn btn-success" href="projects.html" role="button">Projects</a>
+            <a class="btn btn-danger" href="activities.html" role="button">Activities</a>
+            <a class="btn btn-warning text-white" href="life.html" role="button">Life</a>
+        </div>
+        <p class="texter">
+            Hi! I'm Trishal Muthan, a high school student from Virginia! I enjoy learning about computer science and programming and I hope to learn more in the upcoming years!
+            On this website, you should be able to see some of the projects I've done, some things I do in my free time, and things in my personal life. Thanks for reading!
+        </p>
+        <img src="hibitmoji.png" class="image"/>
+        <footer class="bg-primary text-white">
+            Made by Trishal Muthan.
+        </footer>
+    </body>
+</html>

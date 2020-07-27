@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trishal Muthan</title>
+        <script>
+            let x = 1;
+            function changepic()
+            {
+                if(x === 1)
+                {
+                    document.querySelector('img').src = "yell.png"
+                    x = 2;
+                }
+                else if(x === 2)
+                {
+                    document.querySelector('img').src = "family.png"
+                    x = 3;
+                }
+                else if(x === 3)
+                {
+                    document.querySelector('img').src = "bitmojiball.png"
+                    x = 4;
+                }
+                else
+                {
+                    document.querySelector('img').src = "friends.png"
+                    x = 1;
+                }
+            }
+            window
+            window.setInterval(changepic, 1500)
+        </script>
+    </head>
+    <body>
+        <header class="bg-warning text-white">
+            My Life
+        </header>
+        <div class="navbar">
+            <a class="btn btn-primary" href="index.html" role="button">Home</a>
+            <a class="btn btn-success" href="projects.html" role="button">Projects</a>
+            <a class="btn btn-danger" href="activities.html" role="button">Activities</a>
+            <a class="btn btn-warning text-white" href="#" role="button">Life</a>
+        </div>
+        <p class="texter">
+            As for my personal life, I enjoy hanging out with my family and friends! I like to play video games, and I also enjoy playing and watching all sorts of sports. My favorite two teams are the Seattle Seahawks and the Miami Heat!
+        </p>
+        <img src="yell.png" class="image"/>
+        <footer class="bg-warning text-white">
+            Made by Trishal Muthan.
+        </footer>
+    </body>
+</html>

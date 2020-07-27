@@ -1,0 +1,44 @@
+header
+{
+    background-color: #2a70cc;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+.navbar
+{
+    margin-top: 20px;
+    margin-right: 450px;
+    margin-left: 450px;
+    text-align: center;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.hometext
+{
+    padding-top: 200px;
+    float: right;
+}
+
+.texter
+{
+    float: left;
+    padding-left: 25px;
+    width:770px;
+    padding-top: 125px;
+    text-indent: 20px;
+}
+
+.image
+{
+    float: right;
+    padding-right: 50px
+}

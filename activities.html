@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trishal Muthan</title>
+        <script>
+            let x = 1;
+            function changepic()
+            {
+                if(x === 1)
+                {
+                    document.querySelector('img').src = "laptop.png"
+                    x = 2;
+                }
+                else if(x === 2)
+                {
+                    document.querySelector('img').src = "clutch.png"
+                    x = 3;
+                }
+                else
+                {
+                    document.querySelector('img').src = "compbitmoji.png"
+                    x = 1;
+                }
+            }
+            window.setInterval(changepic, 1500)
+        </script>
+    </head>
+    <body>
+        <header class="bg-danger text-white">
+            My Activities
+        </header>
+        <div class="navbar">
+            <a class="btn btn-primary" href="index.html" role="button">Home</a>
+            <a class="btn btn-success" href="projects.html" role="button">Projects</a>
+            <a class="btn btn-danger" href="#" role="button">Activities</a>
+            <a class="btn btn-warning text-white" href="life.html" role="button">Life</a>
+        </div>
+        <p class="texter">
+            I do many activities, in and out of school! I participate in Code++ Club, Development Club, Machine Learning Club, and Sports Statistics Club! I also am one of the social media coordinators and am a mentor for Codefy, a nonproft computer science tutoring program!
+        </p>
+        <img src="laptop.png" class="image"/>
+        <footer class="bg-danger text-white">
+            Made by Trishal Muthan.
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trishal Muthan</title>
+    </head>
+    <body>
+        <header class="bg-success text-white">
+            My Projects
+        </header>
+        <div class="navbar">
+            <a class="btn btn-primary" href="index.html" role="button">Home</a>
+            <a class="btn btn-success" href="#" role="button">Projects</a>
+            <a class="btn btn-danger" href="activities.html" role="button">Activities</a>
+            <a class="btn btn-warning text-white" href="life.html" role="button">Life</a>
+        </div>
+        <div style="float: left; padding-left: 25px; width:770px; padding-top: 50px; text-indent: 20px">
+            <select style="text-align: center;">
+                <option value="protest" selected>ProtestFind</option>
+                <option value="pathfinder">Pathfinder</option>
+                <option value="rps">Rock-Paper-Scissors</option>
+            </select>
+            <p style="margin-top:20px;">
+                ProtestFind is an online service that allows people to create and join peaceful protests throughout the country. Once your account is created by providing an email, username, and password, you are able to create and join protests. You may create a new protest by providing a location or join a protest by finding a location near you, and clicking the join button. The number of people participating in a certain protest will be shown to the side of each available protest. We are currently in one of the darker times in our country’s history. By using ProtestFind and effectively organizing peaceful protests, we will be one big step closer to causing real change. And we are long due for some change.
+            </p>
+            <script>
+                document.querySelector('select').onchange = function() {
+                    let r = this.value;
+                    if (r === "protest")
+                    {
+                        document.querySelector('p').innerHTML = "ProtestFind is an online service that allows people to create and join peaceful protests throughout the country. Once your account is created by providing an email, username, and password, you are able to create and join protests. You may create a new protest by providing a location or join a protest by finding a location near you, and clicking the join button. The number of people participating in a certain protest will be shown to the side of each available protest. We are currently in one of the darker times in our country’s history. By using ProtestFind and effectively organizing peaceful protests, we will be one big step closer to causing real change. And we are long due for some change.";
+                        document.querySelector('img').src = "protestfind.png";
+                    }
+                    if (r === "pathfinder")
+                    {
+                        document.querySelector('p').innerHTML = "This is a pathfinder visualizer that allows you to place a start and end then see the pathfinding algorithm take place! Currently, the visualizer is able to conduct the BFS, DFS, and A* algorithms!";
+                        document.querySelector('img').src = "astar.png";
+                    }
+                    if (r === "rps")
+                    {
+                        document.querySelector('p').innerHTML = "This is a rock paper scissors game made using Javascript, HTML, and CSS, that allows you to have some fun playing rock paper scissors against a CPU!";
+                        document.querySelector('img').src = "rps.PNG";
+                    }
+                }
+            </script>
+        </div>
+        <img src="protestfind.png" style="float: right; width: 450px; padding-right: 45px; padding-top:50px;"/>
+        <footer class="bg-success text-white">
+            Made by Trishal Muthan.
+        </footer>
+    </body>
+</html>
